@@ -1,0 +1,28 @@
+.descContainer{
+    background-color: #f5f5f5;
+  }
+  .descSection{ /*section of body */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  .descSection img{
+    max-width: 735px;
+    height: 535px;
+    margin-left: 20px;
+  }
+  .descSection-content{
+    height: 100%;
+  }
+  .descSection-content h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .descSection-content p{
+    font-size: 16px;
+    line-height: 1.5;/*1.5x the size of a font*/
+  }
+  

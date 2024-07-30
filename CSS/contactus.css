@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    }
+
+    .case{
+    background-color: rgb(164, 165, 165);
+    }
+    .box{
+    background-color:  rgb(128, 145, 160);
+    margin: 0px;
+    } 
+    /* when it zooms */
+    .zoom {
+    padding: 50px;
+    transition: .5s ease;
+    width: 200px;
+    height: 300px;
+    margin-left: 3px auto;
+    position: relative;
+    z-index: 1;
+    }
+    
+    .zoom:hover {
+    transform: scale(1.5); 
+    z-index: 2;
+    }
+    img{
+      border-radius: 8px;
+    }
+    /* container for flex */
+    .flex-container {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    }
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    .image {
+    opacity: 1;
+    display: block;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }  
+    .flex-container:hover .middle {
+    opacity: 1;
+    } 
+    .text {
+    background-color:gainsboro;
+    color: rgb(15, 3, 3);
+    font-size: 16px;
+    padding: 16px 32px;
+    } 
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .flex-container,.flow-container,.core {
+    display: flex;
+    }
+    
+    .flex-child {
+    flex: 1;
+    border: 2px solid white;
+    font-size: 25px;
+    }  
+    
+    .flex-child:first-child {
+    margin-right: 20px;
+    } 
+    body  {
+    background-image: url('images/camera1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    .wrap,.cover{
+    color:white;
+    background-color:white;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    .bin ,.feedbackForm {
+      /*styling for form container*/
+      width: 400px;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+    }
+    
+    H1{
+        color:black;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    h3 {
+      margin-top: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: rgb(255, 24, 24);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+        box-sizing: border-box;
+        }
+        body{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+          border-radius: 8px;
+        }
+        
+        /* aboutus */
+        .zoom {
+        padding: 50px;
+        transition: .5s ease;
+        width: 200px;
+        height: 200px;
+        margin-left: 3px auto;
+        position: relative;
+        z-index: 1;
+        }
+        /* aboutus */
+        .zoom:hover {
+        transform: scale(1.5); 
+        z-index: 2;
+        }
+        /* aboutus,contactus&research */
+        .flex-container {
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        position: relative;
+        display: flex;
+        }
+        /* aboutus */
+        .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+        /* about us */
+        .image {
+        opacity: 1;
+        display: block;
+        height:300px;
+        width:300px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        } 
+        /* aboutus & research */
+        .flex-container:hover .middle {
+        opacity: 1;
+        } 
+        /* aboutus */
+        .text {
+        background-color:gainsboro;
+        color: rgb(15, 3, 3);
+        font-size: 16px;
+        padding: 16px 32px;
+        } 
+        /* contactus,aboutus&research */
+        .flex-container,.flow-container,.core {
+        display: flex;
+        }
+        /* contactus */
+        .flex-child {
+          flex: 1;
+          border: 2px solid white;
+          font-size: 25px;
+          }  
+          /* contactus */
+          .flex-child:first-child {
+          margin-right: 20px;
+        }
+        /* contactus js */
+        .form {
+          /*styling for form container*/
+          width: 400px;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          /* position: relative;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          left: 50%; */
+        }
+        /* contactus js */
+        .close {
+          top: 10px;
+          right: 10px;
+          font-size: 28px;
+          cursor: pointer;
+          color: black;
+        
+        }
+        /* contactus js */
+        .close:hover {
+          color: red;
+        }
+        /* contactus js */
+        h3 {
+          margin-top: 20px;
+        }
+        /* contactus js */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+        }
+        /* contactus js */
+        input[type="radio"] {
+          margin-right: 5px;
+        }
+        /* contactus js */
+        label {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        /* contactus js */
+        input[type="submit"] {
+          background-color: rgb(255, 24, 24);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          display: block;
+          margin: auto;
+        }
+        /* contactus js */
+        input[type="submit"]:hover {
+          /*styling for hover effect*/
+          background-color: #FF4500;
+        }
+        /* research */
+        .flex-container div {
+          margin-right: 10px; /* Add margin to the right of the divs containing images */
+        }
+        /* blog */
+        h1 {
+          color: #0b0808;
+        }
+        /* blog */
+        h2 {
+          color: #0e0c0c;
+        }
+        /* blog */
+        p {
+          line-height: 1.5;
+        }
+    
+    input[type="submit"]:hover {
+      /*styling for hover effect*/
+      background-color: #FF4500;
+    }
+    

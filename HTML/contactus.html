@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body
+    {
+      margin: 0px;
+      margin-top: 100px;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    a:hover {
+      color: rgb(247, 118, 31);
+      transition: 1s;
+    }
+
+    a:active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar of the website -->
+  <div class="top-nav">
+    <marquee class="quote-marquee header" behaviour="scroll" direction="down" scrolldelay="700">
+      <a href="../HTML/product.html">
+        <span class="quote">Capture life's moment with our Cutting-edge Cameras! Preserve memories in Stunning
+          Details</span>
+      </a>
+      <br>
+      <a href="../HTML/product.html">
+        <span class="quote"> Preserve memories in Stunning Details</span>
+      </a>
+    </marquee>
+    <header class="top-header header">
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html"><img src="../IMAGE/company.PNG" alt="Paradigm Logo"></a>
+        </div>
+        <div class="search-box">
+          <form id="search-form" action="#" method="GET">
+            <input type="text" class="search-input" placeholder="Search products...">
+            <button class="search-button" type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+        <div class="user-info">
+          <a href="../HTML/product.html"><i class="fas fa-user"></i></a>
+          <a href="../HTML/product.html"><i class="fas fa-shopping-cart"></i> (0)</a>
+        </div>
+      </div>
+    </header>
+    <header class="middle-header ">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="../HTML/product.html">Shop</a></li>
+            <li><a href="../HTML/blog.html">Blog</a></li>
+            <li><a href="../HTML/refrence.html">References</a></li>
+            <li><a href="../HTML/aboutus.html">About Us</a></li>
+            <li><a href="../HTML/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+<main>
+  <!-- main content inside the page -->
+  <div class="flex-container">
+
+    <div class="flex-child magenta">
+      <h1>Phone Hours</h1><br>
+      <h2>Open hours</h2><br>
+      <p>Open from <time>10:00 am</time> to <time>6:00 pm</time> every weekday.</p><br>
+      <h1>Email & Mailing Address</h1><br>
+      <p>Kamal Marg, Kathmandu 44600</p><br>
+      <p>prdigm.outlet@gmail.com</p><br>
+      <h1>Retail Store Hours</h1><br>
+      <h2>For any pick-ups and drop-off</h2><br>
+      <p>Open from <time>1:00 pm</time> to <time>4:00 pm</time> every weekday.</p><br>
+      <p>Saturday & Sunday - Closed</p><br>
+    </div>
+
+    <div class="flex-child green">
+      <img src="../IMAGE/telephone.jpg" width="100%" alt="telephone">
+    </div>
+
+  </div>
+  <div class="flow-container">
+    <div class="flex-child green">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3532.311840746982!2d85.32304771506206!3d27.707656482791858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1682000974636!5m2!1sen!2snp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="flex-child magenta">
+      <h2>Way to Us</h2><br><br>
+      <p>We made our website more effective and convinent for our customers to reach out easily. If you still have some
+        problem finding us or have any queries related to our outlet feel free to contact us. We will reach out to you
+        as soon as possible.Cintact number - 0166172390, 0166172377 </p>
+      <a href="aboutus.html">About Us</a>
+      <p>Explore more...</p>
+    </div>
+  </div><br><br>
+  <h1>Talk with our sales team for any help or Guidelines.</h1><br>
+  <div class="bin" align="center">
+    <form name="feedbackForm" onsubmit="validationform()">
+      <h2>Feedback Form</h2>
+      <h3>Username:</h3>
+      <input type="text" name="username" placeholder="Enter your Username">
+      <h3>Email:</h3>
+      <input type="email" name="email" placeholder="Enter your Email">
+      <h3>Gender:</h3>
+      <input type="radio" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female">
+      <label for="female">Female</label>
+      <h3>Message:</h3>
+      <textarea name="message" rows="6" placeholder="Give us your Feedback!"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div><br>
+  <!-- using js -->
+  <script>
+    //function for form submission
+function validationform() {
+    //taking values
+    var username = document.forms["feedbackForm"]["username"].value;
+    var email = document.forms["feedbackForm"]["email"].value;
+    var gender = document.forms["feedbackForm"]["gender"].value;
+    var message = document.forms["feedbackForm"]["message"].value;
+    //for checking if fields are empty or not
+    if (username == "" || email == "" || gender =="" || message == "") {
+        alert("Fields cannot be empty");
+    }
+    else {
+        alert("Thank you for the feedback");
+    }
+}
+var closeButton = document.getElementById("closeButton");
+</script>
+<br>
+</main>
+<footer>
+  <!-- Footer content of the website -->
+  <div class="footer-line"></div>
+  <br>
+  <div class="footer-column">
+    <a href="index.html" class="logo-link"><img src="../IMAGE/footerlogo.png" alt="Paradigm logo"></a>
+    <div class="social-line"></div>
+    <p class="footer-paragraph">Best camera sellers in the world, providing excellent service with quality products
+      and maintaining a happy seller-consumer relationship.</p>
+  </div>
+  <div class="footer-column">
+    <h4>Join our newsletter community!</h4>
+    <form class="email-signup">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit"><i class="fas fa-arrow-right"></i></button>
+    </form>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/people/paradigm-outlet/100091911551959/?mibextid=ZbWKwL"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/paradigm.outlet?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+      <a href="https://discord.gg/VarDEw6CDP"><i class="fab fa-discord"></i></a>
+      <a href="https://twitter.com/paradigm_outlet"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="footer-column">
+    <h4>Useful Links</h4>
+    <ul>
+      <li><a href="../HTML/product.html">Shop</a></li>
+      <li><a href="../HTML/blog.html">Blog</a></li>
+      <li><a href="../HTML/refrence.html">References</a></li>
+      <li><a href="../HTML/aboutus.html">About Us</a></li>
+      <li><a href="../HTML/contactus.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <hr>
+  <p class="smaller-copyright">
+    &copy; 2023 Paradigm. All rights reserved.
+  </p>
+</footer>
+</body>
+</html>
